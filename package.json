@@ -1,0 +1,36 @@
+{
+  "name": "react-twitter-streams",
+  "version": "0.0.1",
+  "description": "A React app that displays a live Twitter feed",
+  "homepage": "http://soyjavi.com",
+  "author": "Javi Jimenez <javi.jimenez.villar@gmail.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "dependencies": {
+    "coffee-script": "*",
+    "zenserver": "*"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.4",
+    "babel-loader": "^6.0.1",
+    "babel-plugin-react-transform": "^1.1.1",
+    "babel-preset-es2015": "^6.1.4",
+    "babel-preset-react": "^6.1.4",
+    "babel-preset-stage-0": "^6.1.4",
+    "node-jsx": "^0.11.0",
+    "ntwitter": "^0.5.0",
+    "react": "^0.11.2",
+    "socket.io": "^1.3.5",
+    "webpack": "^1.9.10"
+  },
+
+  "scripts": {
+    "start": "npm run build & npm run server",
+    "start2": "node server.js",
+    "build": "webpack",
+    "server": "nodemon zen.js zen development"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
